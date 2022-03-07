@@ -1,0 +1,681 @@
+@font-face {
+  font-family: 'Marcin Ant B';
+  src: url("https://d3cvruiabw27as.cloudfront.net/dist/resources/fonts/marcin-ant-b/marcinantb-regular-webfont.woff2") format("woff2"), url("https://d3cvruiabw27as.cloudfront.net/dist/resources/fonts/marcin-ant-b/marcinantb-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Marcin Ant B bold';
+  src: url("https://d3cvruiabw27as.cloudfront.net/dist/resources/fonts/marcin-ant-b/marcinantb-bold-webfont.woff2") format("woff2"), url("https://d3cvruiabw27as.cloudfront.net/dist/resources/fonts/marcin-ant-b/marcinantb-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* line 21, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard * {
+  vertical-align: middle;
+}
+
+/* line 25, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard a {
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* line 29, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard button:focus {
+  outline: none;
+}
+
+/* line 32, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard {
+  background: #fff;
+  color: #202020;
+  width: 100%;
+  clear: both;
+  float: none;
+  box-sizing: border-box;
+  font-family: 'Marcin Ant B';
+  position: relative;
+}
+
+/* line 43, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_contenedor {
+  position: relative;
+  padding: 3px 0;
+}
+
+/* line 48, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_cabecera:after,
+.mm_AudioPlayer_contenedor:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 55, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard svg {
+  height: 100%;
+}
+
+/* line 58, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton {
+  font-family: Benton Sans, sans-serif;
+  line-height: 1;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  display: inline-block;
+  width: 20px;
+  height: 36px;
+  cursor: pointer;
+}
+
+/* line 71, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton_play,
+.mm_AudioPlayer_storycard .mm_boton_pausa {
+  background-color: #fff;
+  overflow: hidden;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* line 82, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton_play svg,
+.mm_AudioPlayer_storycard .mm_boton_pausa svg {
+  width: 20px;
+  fill: #00b1ff;
+  stroke: none;
+}
+
+/* line 88, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso .mm_progreso_texto {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Marcin Ant B bold';
+  margin-bottom: 3px;
+}
+
+/* line 96, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_pequeno .mm_progreso .mm_progreso_texto,
+.mm_AudioPlayer_mediano .mm_progreso .mm_progreso_texto,
+.mm_AudioPlayer_grande .mm_progreso .mm_progreso_texto {
+  display: none;
+}
+
+/* line 101, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+/* .mm_AudioPlayer_grande .mm_progreso .mm_progreso_texto {
+  display: block;
+} */
+
+.mm_AudioPlayer_titulo .mm_progreso .mm_progreso_texto {
+  display: block;
+}
+
+/* line 105, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso {
+  left: 45px !important;
+  position: absolute;
+  background: transparent;
+  width: calc(100% - 45px);
+}
+
+/* line 111, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_pequeno .mm_progreso {
+  top: 18px;
+  left: 45px;
+}
+
+/* line 116, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_mediano .mm_progreso {
+  top: 18px;
+  left: 45px;
+}
+
+.mm_AudioPlayer_grande .mm_progreso {
+  top: 18px;
+  left: 45px;
+}
+
+/* line 121, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_titulo .mm_progreso {
+  top: 3px;
+  left: 45px;
+}
+
+/* line 118, ../../../recursos/estilos/v2.x/v2.1/podcast.scss */
+.mm_AudioPlayer .mm_AudioPlayer_titulo {
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 126, ../../../recursos/estilos/v2.x/v2.1/podcast.scss */
+.mm_AudioPlayer_pequeno .mm_AudioPlayer_titulo {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+/* line 126, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso_barra {
+  position: relative;
+}
+
+/* line 128, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard:not(.mm_AudioPlayer_noiniciado) .mm_progreso {
+  cursor: pointer;
+}
+
+/* line 132, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso_barra {
+  left: 0;
+  height: 2px;
+  background-color: rgba(151, 151, 151, 0.2);
+}
+
+/* line 138, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso_barra_porcentaje {
+  background-color: #00b1ff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 146, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton_silencio + .mm_volumen .mm_volumen_barra_porcentaje {
+  opacity: 0;
+}
+
+/* line 150, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_progreso_barra_manejador {
+  visibility: hidden;
+  opacity: 0;
+  display: inline-block;
+  top: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #fff;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 0;
+  cursor: pointer;
+  outline: none;
+  -moz-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.22);
+  /* Safari v3.0+ and by Chrome v0.2+ */
+  -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.22);
+  /* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.22);
+  -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#38000000,Positive=true)";
+  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=1,OffY=1,Color=#38000000,Positive=true);
+  -webkit-transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0, 0, 0.2, 1);
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* line 179, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard:not(.mm_AudioPlayer_noiniciado) .mm_progreso_barra_manejador {
+  visibility: hidden;
+  opacity: 1;
+}
+
+/* line 180, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_duracion {
+  width: auto;
+  text-align: center;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+/* line 188, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_contenedor {
+  vertical-align: middle;
+}
+
+/* line 192, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_contenedor > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 197, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_controles {
+  vertical-align: middle;
+}
+
+/* line 201, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton,
+
+
+/* line 204, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_boton_silencio,
+.mm_AudioPlayer_storycard .mm_boton_sonido {
+  margin-left: 0;
+  margin-right: 0px;
+}
+
+/* line 207, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton svg {
+  transition: all .2s ease;
+}
+
+/* line 209, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton_play #mm_icono_play,
+.mm_boton_pausa #mm_icono_pausa {
+  opacity: 1;
+}
+
+/* line 212, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+#mm_icono_pausa, #mm_icono_silencio {
+  opacity: 0;
+}
+
+/* line 214, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton_silencio #mm_icono_silencio {
+  opacity: 1;
+}
+
+/* line 215, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton_silencio #mm_icono_sonido {
+  opacity: 0;
+}
+
+/* line 217, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton_pausa #mm_icono_play {
+  opacity: 0;
+}
+
+/* line 218, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_boton_pausa #mm_icono_pausa {
+  opacity: 1;
+}
+
+/* line 221, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_duracion .mm_duracion_actual {
+  float: left;
+}
+
+/* line 225, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_storycard .mm_duracion .mm_duracion_total {
+  float: right;
+}
+
+/* line 229, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer_grande:not(.mm_AudioPlayer--escritorio) .mm_progreso {
+  top: 25px;
+}
+
+/* ANIMACIONES y ajustes ESCRITORIO */
+/* line 236, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio.cargando .mm_boton_play,
+.mm_AudioPlayer--escritorio.cargando .mm_boton_pausa{
+  background-color: #ffffff !important;
+  cursor:default;
+}
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio.cargando .mm_boton_play,
+  .mm_AudioPlayer--escritorio.cargando .mm_boton_pausa{
+    background-color: #ffffff !important;
+    cursor:default;
+  }
+}
+
+
+.mm_AudioPlayer--escritorio.cargando .mm_boton_play:hover{
+  background-color: #ffffff !important;
+}
+
+.mm_AudioPlayer--escritorio.cargando .mm_boton_pausa:hover{
+  background-color: #ffffff !important;
+}
+
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio.cargando .mm_boton_play:hover{
+    background-color: #ffffff !important;
+  }
+
+  .mm_AudioPlayer--escritorio.cargando .mm_boton_pausa:hover{
+    background-color: #ffffff !important;
+  }
+}
+
+
+
+
+
+
+.mm_AudioPlayer--escritorio .mm_boton_play{
+  background-color: #ffffff !important;
+}
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio .mm_boton_play{
+    background-color: #ffffff !important;
+  }
+}
+
+
+
+.mm_AudioPlayer--escritorio .mm_boton_play:hover{
+  background-color: #ffffff !important;
+}
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio .mm_boton_play:hover{
+    background-color: #ffffff !important;
+  }
+}
+
+
+.mm_AudioPlayer--escritorio .mm_boton_pausa {
+  background-color: #ffffff !important;
+}
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio .mm_boton_pausa {
+    background-color: #ffffff !important;
+  }
+}
+
+
+
+.mm_AudioPlayer--escritorio .mm_boton_pausa:hover {
+  background-color: #ffffff !important;
+}
+@media (min-width: 1000px) {
+  .mm_AudioPlayer--escritorio .mm_boton_pausa:hover {
+    background-color: #ffffff !important;
+  }
+}
+
+
+
+
+/* line 237, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play:hover svg,
+.mm_AudioPlayer--escritorio .mm_boton_pausa:hover svg {
+  /* fill: #fff; */
+}
+
+/* line 238, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play,
+.mm_AudioPlayer--escritorio .mm_boton_pausa {
+  overflow: hidden;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #000;
+  z-index: 1;
+  margin: 0;
+}
+
+
+@media (min-width: 1000px) {
+/* line 239, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play::before{
+  background: #fff;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mm_AudioPlayer--escritorio .mm_boton_pausa::before {
+  background: #ffffff;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play::before,
+.mm_AudioPlayer_storycard.cargando .mm_boton_pausa::before {
+  background: #ffffff;
+}
+
+/* line 240, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play:hover::before,
+.mm_AudioPlayer--escritorio .mm_boton_pausa:hover::before {
+  visibility: visible;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1), visibility 0s 0.47s;
+  transform: scaleY(0);
+}
+
+/* line 241, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play svg,
+.mm_AudioPlayer--escritorio .mm_boton_pausa svg {
+  position: relative;
+  display: inline-block;
+  /* animation: mm_AudioPlayer-roll-out 0.5s forwards cubic-bezier(0.165, 0.84, 0.44, 1); */
+}
+
+/* line 242, ../../../recursos/estilos/v2.x/v2.1/podcast-storycard.scss */
+.mm_AudioPlayer--escritorio .mm_boton_play:hover svg,
+.mm_AudioPlayer--escritorio .mm_boton_pausa:hover svg {
+  /* animation: mm_AudioPlayer-roll-over 0.5s forwards cubic-bezier(0.165, 0.84, 0.44, 1); */
+}
+
+}
+
+@keyframes mm_AudioPlayer-roll-over {
+  35% {
+    transform: translateY(10px);
+  }
+  35.001% {
+    color: #fff;
+    transform: translateY(-20px);
+  }
+  100% {
+    color: #fff;
+    transform: translateY(0);
+  }
+}
+@keyframes button--dark-roll-over {
+  35% {
+    transform: translateY(10px);
+  }
+  35.001% {
+    color: #171b1a;
+    transform: translateY(-20px);
+  }
+  100% {
+    color: #171b1a;
+    transform: translateY(0);
+  }
+}
+@keyframes mm_AudioPlayer-roll-out {
+  0% {
+    color: #fff;
+  }
+  35% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  60.001% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes button--dark-roll-out {
+  0% {
+    color: #171b1a;
+  }
+  35% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  60.001% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes mm_AudioPlayer-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  60% {
+    -moz-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@-webkit-keyframes mm_AudioPlayer-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  60% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@keyframes mm_AudioPlayer-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  60% {
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+
+/*# sourceMappingURL=podcast-storycard.css.map */
+
+
+
+/* Boton loader */
+.mm_AudioPlayer_storycard .mm_boton_play.svg-loader {
+  display: none;
+  cursor: default;
+  text-align: center;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play .loading-circle {
+  display: none;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play .loading-play {
+  display: none;
+  position: relative;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play .loading-circle {
+  display: inline-block;
+  width: 15px;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_pausa .loading-circle {
+  display: inline-block;
+  width: 15px;
+}
+
+.mm_AudioPlayer_storycard.iniciar .mm_boton_play .loading-circle {
+  display: none;
+}
+
+.mm_AudioPlayer_storycard.iniciar .mm_boton_pausa .loading-circle {
+  display: none;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play.svg-loader {
+  display: block;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_play svg {
+  display: none;
+}
+
+.mm_AudioPlayer_storycard.cargando .mm_boton_pausa svg {
+  display: none;
+}
+
+.loader-svg{
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  fill: none;
+  stroke-width: 9px;
+  stroke-linecap: round;
+  stroke: rgb(0, 177, 255);
+}
+.loader-svg.bg{
+  stroke-width: 9px;
+  stroke: #ffffff;
+}
+
+@media (min-width: 1000px) {
+  .loader-svg.bg{
+    stroke-width: 9px;
+    stroke: #ffffff;
+  }
+}
+
+.animate{
+  stroke-dasharray: 242.6;
+  animation: fill-animation 1s cubic-bezier(1,1,1,1) 0s infinite;
+}
+
+@keyframes fill-animation{
+  0%{
+    stroke-dasharray: 40 242.6;
+    stroke-dashoffset: 0;
+  }
+  50%{
+    stroke-dasharray: 141.3;
+    stroke-dashoffset: 141.3;
+  }
+  100%{
+    stroke-dasharray: 40 242.6;
+    stroke-dashoffset: 282.6;
+  }
+}
